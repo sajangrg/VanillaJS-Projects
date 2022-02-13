@@ -48,7 +48,7 @@ let saveEle = document.querySelector('#saveEl');
 function calculateIncrement() {
     console.log('CLiked');
     count++;
-    countEle.innerHTML = count;
+    countEle.textContent = count;
 }
 
 function save() {
@@ -56,6 +56,37 @@ function save() {
 
     let countStr = count + " - ";
     saveEle.textContent += countStr;
-    countEle.innerHTML = 0;
+    countEle.textContent = 0;
     count = 0;
 }
+
+// GREETING LINDA
+// let firstName = "Linda";
+// let greeting = "Hi there";
+
+// let greetWithName = greeting + ", " + firstName + "!";
+
+// function greetSomeone() {
+//     console.log(greetWithName);
+// }
+
+// greetSomeone();
+
+// POINTS COUNT
+let myPoints = 3;
+
+function add3Points() {
+    myPoints += 3;
+}
+
+function remove1Point() {
+    myPoints--
+}
+
+add3Points();
+add3Points();
+add3Points();
+remove1Point();
+remove1Point();
+
+console.log(myPoints);

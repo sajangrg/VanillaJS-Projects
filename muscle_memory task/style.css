@@ -1,0 +1,113 @@
+* {
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section-divider {
+  border-bottom: 2px solid #000;
+  padding: 20px 0;
+  margin: 0 0 50px;
+}
+
+.container-course {
+  max-width: 200px;
+  margin: 25px auto;
+}
+
+.container-course img {
+  max-width: 100%;
+  margin: 0 0 15px;
+}
+
+.container-course h1 {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0 0 15px;
+  color: #000;
+}
+
+.container-course p {
+  color: #f00;
+}
+
+.container-course a {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 150px;
+  padding: 10px 30px;
+  margin: 10px 0;
+  border: 1px solid #000;
+  font-weight: 700;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.container-course a:hover, .container-course a:focus {
+  background-color: #000;
+  color: #fff;
+}
+
+.container-calculator {
+  max-width: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.container-calculator .input-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto 15px;
+}
+
+.container-calculator .input-wrapper input[type="text"],
+.container-calculator .input-wrapper span {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 70px;
+  min-width: 40px;
+  height: 33px;
+  border: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+  background-color: #fff;
+}
+
+.container-calculator a {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: inherit;
+  padding: 10px 15px;
+  margin: 5px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.container-calculator a:hover, .container-calculator a:focus {
+  color: #fff;
+  background-color: #000;
+}
+
+.container-calculator .calculation-wrapper span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 15px;
+  border: 0;
+  border-bottom: 2px solid;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+  background-color: #fff;
+}

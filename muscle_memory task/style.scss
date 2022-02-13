@@ -1,0 +1,105 @@
+* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section-divider {
+    border-bottom: 2px solid #000;
+    padding: 20px 0;
+    margin: 0 0 50px;
+}
+
+.container-course {
+    max-width: 200px;
+    margin: 25px auto;
+    img {
+        max-width: 100%;
+        margin: 0 0 15px;
+    }
+    h1 {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0 0 15px;
+        color: #000;
+    }
+    p {
+        color: #f00;
+    }
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        min-width: 150px;
+        padding: 10px 30px;
+        margin: 10px 0;
+        border: 1px solid #000;
+        font-weight: 700;
+        color: #000;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: 0.2s all ease-in-out;
+        &:hover,
+        &:focus {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
+
+// Calculator
+.container-calculator {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    .input-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 auto 15px;
+        input[type="text"],
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 70px;
+            min-width: 40px;
+            height: 33px;
+            border: 0;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.4;
+            font-weight: 700;
+            border-bottom: 2px solid #000;
+            background-color: #fff;
+        }
+    }
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: inherit;
+        padding: 10px 15px;
+        margin: 5px;
+        border: 1px solid #000;
+        text-decoration: none;
+        color: #000;
+        background: #fff;
+        transition: 0.3s all ease;
+        &:hover,
+        &:focus {
+            color: #fff;
+            background-color: #000;
+        }
+    }
+    .calculation-wrapper {
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 10px 15px;
+            border: 0;
+            border-bottom: 2px solid;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #000;
+            background-color: #fff;
+        }
+    }
+}
