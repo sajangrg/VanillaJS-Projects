@@ -1,0 +1,76 @@
+* {
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 50px 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: url(./bg_blackjack.jpg) no-repeat 0 0/cover;
+  color: #fff;
+  text-align: center;
+}
+
+.container-bj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100% - 70px);
+}
+
+.container-bj h1 {
+  margin: 0 0 15px;
+  font-size: 26px;
+  line-height: 1.4;
+  color: goldenrod;
+}
+
+.container-bj p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+
+.container-bj p#message-el {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.container-bj .btn-play {
+  width: 150px;
+  padding: 10px 20px;
+  margin: 0 0 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #016f32;
+  background: goldenrod;
+  border: 2px solid #016f32;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+  cursor: pointer;
+}
+
+.container-bj .btn-play:hover, .container-bj .btn-play:focus {
+  background: #016f32;
+  color: goldenrod;
+  border: 2px solid goldenrod;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
