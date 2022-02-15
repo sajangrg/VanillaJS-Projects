@@ -1,13 +1,25 @@
-let firstCard = 10;
-let secondCard = 2;
-let cards = [firstCard, secondCard] // array
-let sum = firstCard + secondCard;
+let cards = [] // array
+let sum = 0;
 let hasBlackJack = false;
-let isAlive = true;
+let isAlive = false;
 let message;
 let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardsEl = document.querySelector("#cards-el");
+
+
+function getRandomCard() {
+    let genNum = Math.floor(Math.random() * 13) + 1
+    if (genNum === 1) {
+        return 11;
+    } else if (genNum > 10) {
+        return 10;
+    } else {
+        return genNum;
+    }
+    // console.log(genNum);
+    // return ;
+}
 
 // Start Game
 function startGame() {
@@ -15,6 +27,11 @@ function startGame() {
 }
 
 function renderGame() {
+    let isAlive = false;
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+    let cards = [firstCard, secondCard] // array
+    let sum = firstCard + secondCard;
     if (sum <= 20) {
         message = "Do you want to draw a new card?";
     } else if (sum === 21) {
@@ -26,15 +43,21 @@ function renderGame() {
     }
     messageEl.textContent = message;
     sumEl.textContent = "Sum: " + sum;
-    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
-    // console.log(message);
+    // cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+    cardsEl.textContent = "Cards: ";
+
+    // Rendering out all the cards using for loop
+    for (i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " ";
+    }
 }
 
 // New Card
 function newCard() {
     // console.log("New card has been drawn.");
-    let lastCard = 10;
-    sum += lastCard;
+    let card = getRandomCard();
+    sum += card;
+    cards.push(card);
     renderGame();
 }
 // Cash out
