@@ -89,3 +89,57 @@ function totalRaceTime() {
 let totalTime = totalRaceTime();
 
 console.log(totalTime);
+
+// Logical Operator
+
+// && operator
+let hasSolvedChallenge = false;
+let hasHintsLeft = false;
+
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
+    showSolution();
+}
+
+function showSolution() {
+    console.log("Showing the solution...")
+}
+
+// || operator
+let likesDocumentaries = true;
+let likesStartups = true;
+
+if (likesDocumentaries === true || likesStartups === false) {
+    recommendMovie()
+}
+
+function recommendMovie() {
+    console.log("Hay, check out this new film we think you will like!")
+}
+
+// Object in Javascript
+
+let airbnbCastle = {
+    name: "King's castle",
+    totalRooms: 50,
+    free: false,
+    castleComposition: ["Lawn", "Corridor", "Passage"]
+}
+
+console.log(airbnbCastle.name);
+console.log(airbnbCastle.totalRooms);
+console.log(airbnbCastle.castleComposition[2]);
+
+
+// Object and Fuctions practice
+
+let person = {
+    name: "Sajan",
+    age: 28,
+    country: "Nepal"
+}
+
+function logData() {
+    console.log(person.name + " is " + person.age + " years old and lives in " + person.country + ".");
+}
+
+logData();
