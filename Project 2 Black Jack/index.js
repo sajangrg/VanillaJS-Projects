@@ -2,7 +2,7 @@ let player = {
     name: "Alisha",
     chips: 5000
 }
-let cards = [] // array
+let cards = []
 let sum = 0;
 let hasBlackJack = false;
 let isAlive = false;
@@ -54,11 +54,7 @@ function renderGame() {
     }
 }
 
-
-
-
 function newCard() {
-    // console.log("New card has been drawn.");
     // New Card
     if (isAlive === true && hasBlackJack === false) {
         let card = getRandomCard();
@@ -68,25 +64,3 @@ function newCard() {
     }
 
 }
-// Cash out
-// console.log('Black Jack : ' + hasBlackJack, '| IS ALIVE: ' + isAlive)
-
-
-// if (sum < 21) {
-//     console.log("Do you want to draw a new card?")
-// } else if (sum === 21) {
-//     console.log("Wohoo! You've got Blackjack!!!");
-// } else {
-//     console.log("You're out of the game!")
-// }
-
-// let age = 105;
-
-// if (age < 100) {
-//     console.log("Not elegible.")
-// } else if (age === 100) {
-//     console.log("Here is your birthday card from the King!")
-// } else {
-//     console.log("Not elegible, you have already gotten one.")
-// }
-// console.log(sum);

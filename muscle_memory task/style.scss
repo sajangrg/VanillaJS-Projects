@@ -9,6 +9,12 @@
     border-bottom: 2px solid #000;
     padding: 20px 0;
     margin: 0 0 50px;
+    text-align: center;
+    h2 {
+        font-size: 22px;
+        line-height: 26px;
+        margin: 0 0 10px;
+    }
 }
 
 .container-course {
@@ -100,6 +106,27 @@
             line-height: 1.4;
             color: #000;
             background-color: #fff;
+        }
+    }
+}
+
+//Sorting-array
+.sorting-array {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    p {
+        width: 100%;
+        padding: 10px 15px;
+        margin: 0 0 10px;
+        font: normal normal 700 22px/26px;
+        text-align: center;
+        background: #f00;
+        color: #fff;
+        &#orange-shelf {
+            background: #ffa500;
         }
     }
 }

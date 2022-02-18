@@ -143,3 +143,76 @@ function logData() {
 }
 
 logData();
+
+// Conditional Statement
+
+let age = 110;
+
+if (age < 6) {
+    console.log("Free");
+} else if (age < 18) {
+    console.log("Child Discount")
+} else if (age < 27) {
+    console.log("Student discount")
+} else if (age < 67) {
+    console.log("Full price")
+} else {
+    console.log("Senior citizen discount")
+}
+
+// For loops
+
+let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"];
+console.log("The 5 largest countries in the world: ");
+for (let i = 0; i < largeCountries.length; i++) {
+    console.log("- " + largeCountries[i]);
+}
+
+// Array push, pop, unshift, shift
+largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+largeCountries.pop();
+largeCountries.push("Pakistan");
+console.log(largeCountries);
+largeCountries.shift();
+largeCountries.unshift("China");
+console.log(largeCountries);
+
+// Logical operators
+
+let dayOfMonth = 13;
+let weeekday = "Friday";
+
+if (dayOfMonth === 13 && weeekday === "Friday") {
+    console.log("Ohooo!!!")
+}
+
+// Random Array
+
+let hands = ["rock", "paper", "scissor"];
+
+let randomNum = Math.floor(Math.random() * 3);
+
+function throwOneItem() {
+    let item = hands[randomNum];
+    console.log(item);
+}
+
+throwOneItem();
+
+// Sorting Fruits
+
+let fruits = ["Apple", "Orange", "Apple", "Apple", "Orange"];
+let appleShelf = document.getElementById("apple-shelf");
+let orangeShelf = document.getElementById("orange-shelf");
+
+function sortFruits() {
+    for (let i = 0; i < fruits.length; i++) {
+        if (fruits[i] === "Apple") {
+            appleShelf.textContent += "Apple ";
+        } else if (fruits[i] === "Orange") {
+            orangeShelf.textContent += "Orange ";
+        }
+    }
+}
+
+sortFruits()
