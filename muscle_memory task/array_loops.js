@@ -201,18 +201,45 @@ throwOneItem();
 
 // Sorting Fruits
 
-let fruits = ["Apple", "Orange", "Apple", "Apple", "Orange"];
+let fruits = ["Apple", "Orange", "Apple", "Apple", "Orange", "Orange"];
 let appleShelf = document.getElementById("apple-shelf");
 let orangeShelf = document.getElementById("orange-shelf");
 
 function sortFruits() {
     for (let i = 0; i < fruits.length; i++) {
         if (fruits[i] === "Apple") {
-            appleShelf.textContent += "Apple ";
+            appleShelf.textContent += fruits[i] + " ";
         } else if (fruits[i] === "Orange") {
-            orangeShelf.textContent += "Orange ";
+            orangeShelf.textContent += fruits[i] + " ";
         }
     }
 }
 
-sortFruits()
+sortFruits();
+
+// addEventListener
+
+let boxEl = document.getElementById('box');
+
+boxEl.addEventListener('click', function() {
+    console.log('I want to open the box!')
+
+    function buyItem() {
+        boxEl.innerHTML += "<p class='para'>Thank you for buying!</p>";
+    }
+    buyItem();
+})
+
+// Adding new element using .innerHTML
+boxEl.innerHTML += "<button id='dummy-btn'>Buy!</button>";
+
+
+// Template Strings/literals
+
+const recipient = "James";
+const sender = "Sajan";
+const email = `Hey${recipient}!
+How is it going?
+Cheers ${sender}.`
+
+console.log(email);

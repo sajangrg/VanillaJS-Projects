@@ -140,3 +140,15 @@
 .sorting-array p#orange-shelf {
   background: #ffa500;
 }
+
+.open-box {
+  min-width: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 40px;
+  margin: 0 0 10px;
+  background-color: #ffa500;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
