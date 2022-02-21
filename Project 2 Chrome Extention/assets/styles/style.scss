@@ -41,7 +41,16 @@ body {
 		color: $white;
 		border: $border-width solid $green;
 		cursor: pointer;
-		&:hover {
+		&#btn-delete{
+      background-color: $white;
+      color: $green;
+      border: $border-width solid $green;
+      &:hover{
+			  background-color: lighten($green, 50%);
+        color: $green;
+      }
+    }
+    &:hover {
 			background-color: lighten($green, 4.5%);
 		}
 	}

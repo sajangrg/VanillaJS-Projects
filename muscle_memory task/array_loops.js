@@ -243,3 +243,19 @@ How is it going?
 Cheers ${sender}.`
 
 console.log(email);
+
+// Function with multiple parameter
+// const welcomeEl = document.getElementById("")
+function user(greeting, name){
+  console.log(`${greeting}, ${name}`);
+}
+
+user('Howdy!', 'Sajan Gurung');
+
+function add(num1, num2){
+  const sum = num1 + num2;
+  return sum;
+}
+
+console.log(add(3, 4));
+console.log(add(9, 102));

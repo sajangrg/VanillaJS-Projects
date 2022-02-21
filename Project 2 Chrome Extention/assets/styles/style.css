@@ -37,6 +37,17 @@ body {
   cursor: pointer;
 }
 
+.render_input-group button#btn-delete {
+  background-color: #fff;
+  color: #5f9341;
+  border: 1px solid #5f9341;
+}
+
+.render_input-group button#btn-delete:hover {
+  background-color: #e7f2e1;
+  color: #5f9341;
+}
+
 .render_input-group button:hover {
   background-color: #69a348;
 }
