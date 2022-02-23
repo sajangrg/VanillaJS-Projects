@@ -26,7 +26,7 @@ body {
 }
 
 .render_input-group button {
-  min-width: 150px;
+  min-width: 127px;
   padding: 10px 15px;
   margin: 0 0 10px;
   font-weight: 700;
@@ -50,6 +50,10 @@ body {
 
 .render_input-group button:hover {
   background-color: #69a348;
+}
+
+.render_input-group button:last-child {
+  margin: 0;
 }
 
 .render_input-group ul {

@@ -1,30 +1,43 @@
 // chrome://extensions/
 let myLeads = [];
 const inputEl = document.getElementById("input-el");
-const btnSave = document.getElementById("btn-input");
+const btnInput = document.getElementById("btn-input");
 const ulEL = document.getElementById("ul-el");
 const btnDelete = document.getElementById("btn-delete");
+const btnTab = document.getElementById("btn-save");
 
 const localsFromLocalStorage = JSON.parse(localStorage.getItem("lead"));
-console.log(localsFromLocalStorage);
+// console.log(localsFromLocalStorage);
 
 if(localsFromLocalStorage){
-  myLeads = localsFromLocalStorage;
-  renderLeads();
+  myLeads = localsFromLocalStorage
+  renderLeads(myLeads)
 }
+
+btnTab.addEventListener('click', function(){
+  chrome.tabs.query({
+      active: true,
+      currentWindow: true
+  }, function(tabs) {
+    myLeads.push(tabs[0].url);
+    localStorage.setItem('lead', JSON.stringify(myLeads))
+    renderLeads(myLeads);
+  });
+})
+
 
 btnDelete.addEventListener('dblclick', function(){
   localStorage.clear();
   myLeads = [];
-  renderLeads();
+  renderLeads(myLeads);
 })
 
-btnSave.addEventListener('click', function() {
+btnInput.addEventListener('click', function() {
   myLeads.push(inputEl.value);
-  console.log(myLeads);
+  // console.log(myLeads);
   inputEl.value = "";
   localStorage.setItem("lead", JSON.stringify(myLeads));
-  renderLeads();
+  renderLeads(myLeads);
   // console.log(localStorage.getItem("lead"));
 });
 
@@ -37,12 +50,12 @@ btnSave.addEventListener('click', function() {
 // }
 
 // Performance better
-function renderLeads() {
+function renderLeads(leads) {
   let listItems = "";
-  for (let i = 0; i < myLeads.length; i++) {
+  for (let i = 0; i < leads.length; i++) {
     listItems += `
       <li>
-        <a href='${myLeads[i]}' target='_blank'>${myLeads[i]}</a>
+        <a href='${leads[i]}' target='_blank'>${leads[i]}</a>
       </li>
     `;
     // console.log(listItems);

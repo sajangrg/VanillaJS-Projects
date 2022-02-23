@@ -259,3 +259,13 @@ function add(num1, num2){
 
 console.log(add(3, 4));
 console.log(add(9, 102));
+
+
+// Function parameter and argument with array
+function getFirst(arr){
+  return arr[0];
+}
+
+let firstItem = getFirst([100, 45, 56])
+
+console.log(firstItem)

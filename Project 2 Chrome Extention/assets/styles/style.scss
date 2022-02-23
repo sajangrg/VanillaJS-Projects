@@ -12,7 +12,7 @@ $green: #5f9341;
 $padding-x: 15px;
 $padding-y: 10px;
 $border-width: 1px;
-$btn-width: 150px;
+$btn-width: 127px;
 body {
   min-width: 420px;
 	padding: $padding-y $padding-x;
@@ -53,6 +53,9 @@ body {
     &:hover {
 			background-color: lighten($green, 4.5%);
 		}
+    &:last-child{
+      margin: 0;
+    }
 	}
 	ul {
 		margin: 10px 0;
