@@ -152,3 +152,48 @@
   text-align: center;
   cursor: pointer;
 }
+
+.btn-log {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 570px;
+  min-width: 40px;
+  height: 33px;
+  border: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.container-image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-image img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  margin: 0 15px 15px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
